@@ -4,7 +4,7 @@ Version: 0.0.12
     - Bug Fixes, Features
   Date: 2024-11-20:
   Changes:
-    - Bug Fixs:
+    - Bug Fixes:
       - Fixed buffer logistic fridge not working
     - Features:
       - Adds startup settings for frige and warehouse campacity
