@@ -103,7 +103,7 @@ local function on_tick(event)
     if game.tick%(10 * freeze_rates) == 0 then
       check_fridges((freeze_rates - 1) * 10)
     end
-	elseif game.tick%freeze_rates == 0 then
+  elseif game.tick%freeze_rates == 0 then
     check_fridges(freeze_rates - 1)
   end
 
