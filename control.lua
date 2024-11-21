@@ -124,7 +124,7 @@ local function OnEntityCreated(event)
   local entity = event.created_entity or event.entity
   if entity and entity.valid then
     if entity.name == "preservation-warehouse" then
-      -- 创建隐藏的电力实体
+      -- Creating Hidden Electrical Entities
       local proxy = entity.surface.create_entity{
         name = "warehouse-power-proxy",
         position = entity.position,
@@ -134,7 +134,7 @@ local function OnEntityCreated(event)
         storage.Warehouses[entity.unit_number] = {warehouse = entity, proxy = proxy}
       end
     else
-      -- 普通冰箱，使用 unit_number 作为键
+      -- A regular refrigerator, using unit_number as the key
       storage.Fridges[entity.unit_number] = entity
     end
   end
